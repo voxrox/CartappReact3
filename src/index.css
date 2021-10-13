@@ -1,0 +1,76 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,#root{
+  height: 100vh;
+  margin:0;
+}
+header a{
+  text-decoration: none;
+}
+
+.imaged{
+  max-width: 10rem;
+
+}
+.sty{
+justify-content: space-between;
+
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: "head" "Imp" "foot";
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+  grid-gap: 10px;
+  
+
+}
+
+body,input,select,textarea{font-size: 1.6rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+header{
+  grid-area: head;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  padding: 0.5px;
+}
+a:hover{
+  color:rgb(255, 247, 240);
+}
+main{
+  grid-area: Imp;
+  background-color: aquamarine;
+  height: 100vh;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+  grid-gap: 5px;
+}
+footer{
+  grid-area: foot;
+  background-color:blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+.main1{
+  flex: 3 60rem;
+  padding: 1rem;
+}
+
+.sidebar{
+  flex: 1 20rem;
+  padding: 1rem;
+}
